@@ -1,0 +1,18 @@
+
+[
+    '{{repeat(5)}}',
+    {
+        name: '{{lorem(1, "words")}}',
+        logo: 'http://lorempixel.com/{{random(400,300,200)}}/{{random(400,300,200)}}/people',
+        contactPerson: [
+            '{{repeat(1,5)}}',
+            {
+                name: '{{firstName()}} {{surname()}}',
+                email: '{{email()}}',
+                phone: '{{phone("+xx xxxxxxxx")}}'   
+            }
+            ],            
+        website: 'www.{{lorem(1,"words")}}.no',
+        about: '{{lorem(2, "paragraphs")}}'
+    }
+]

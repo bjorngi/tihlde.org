@@ -1,0 +1,35 @@
+<body ng-controller="MainCtrl">
+
+<aside id="row2">
+  <h1 class="underline">Events</h1>
+  <content>
+
+  </content>
+
+  <h4>Annonser</h4>
+  <content ng-repeat="firm in firms">
+    <img src="{{firm.logo}}">
+
+  </content>
+</aside>
+<aside id="row1">
+  <h1 class="underline">Artikkler</h1>
+  <div ng-repeat="post in posts">
+    <img src="{{post.picture}}">
+    <h3>{{post.title}}</h3>
+  </div>
+</aside>
+
+
+<main>
+  <article ng-repeat="post in posts">
+    <h1 class="underline">{{post.title}}</h1>
+    <span id="posted">{{post.posted}}</span> <span ng-repeat="tags in post.tags" class="label label-default">{{tags}}</span>
+    <img src="{{post.banner}}">
+    <p>{{post.content}}</p>
+  </article>
+</main>
+
+</body>
+
+

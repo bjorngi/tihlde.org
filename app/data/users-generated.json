@@ -1,0 +1,37 @@
+[
+    {
+        username: 'bjorngi',
+        picture: 'http://lorempixel.com/200/200/people',
+        role: ['drift', 'prinfo'],
+        firstName: 'Bjørn',
+        lastName: 'Gilstad',
+        email: 'bjorngi@tihlde.org',
+        phoneNr: '47637233',
+        subject: 1,
+        about: '{{lorem(2, "paragraphs")}}'
+    },
+    {
+        username: 'thomasj',
+        picture: 'http://lorempixel.com/200/200/people',
+        highlighted: '{{bool()}}',
+        role: ['drift', 'orakel'],
+        firstName: 'Thomas',
+        lastName: 'Toft',
+        email: 'thomasj@tihlde.org',
+        phoneNr: '9343523',
+        subject: 2,
+        about: '{{lorem(2, "paragraphs")}}'
+    },
+    {
+        username: 'axel',
+        picture: 'http://lorempixel.com/200/200/people',
+        highlighted: '{{bool()}}',
+        role: ['drift', 'sosialen'],
+        firstName: 'Axel',
+        lastName: 'Henslie',
+        email: 'axel@tihlde.org',
+        phoneNr: '79843279',
+        subject: 3,
+        about: '{{lorem(2, "paragraphs")}}'
+    }
+]

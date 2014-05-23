@@ -1,0 +1,46 @@
+[
+    {
+        "username": "bjorngi",
+        "picture": "http://lorempixel.com/200/200/people",
+        "role": [
+            "drift",
+            "prinfo"
+        ],
+        "firstName": "Bjørn",
+        "lastName": "Gilstad",
+        "email": "bjorngi@tihlde.org",
+        "phoneNr": 47637233,
+        "subject": 1,
+        "about": "Do culpa esse eiusmod duis excepteur id dolore eu dolor amet excepteur mollit officia elit. Sint duis anim ea irure minim officia enim. Ea magna dolore excepteur Lorem occaecat. Adipisicing dolor nisi officia commodo pariatur id ut voluptate cupidatat. Minim cillum eu Lorem aliquip nisi eu in ex fugiat excepteur velit aliqua ullamco.\r\nIncididunt id incididunt id sunt anim fugiat incididunt incididunt excepteur mollit mollit esse minim. Deserunt et deserunt culpa et nisi nostrud sit. Eiusmod commodo enim eiusmod consectetur laboris nulla minim labore dolore. Voluptate do occaecat aute fugiat commodo elit consequat est occaecat. Dolor eu consequat veniam consectetur eiusmod.\r\n"
+    },
+    {
+        "username": "thomasj",
+        "picture": "http://lorempixel.com/200/200/people",
+        "highlighted": true,
+        "role": [
+            "drift",
+            "orakel"
+        ],
+        "firstName": "Thomas",
+        "lastName": "Toft",
+        "email": "thomasj@tihlde.org",
+        "phoneNr": 9343523,
+        "subject": 2,
+        "about": "Commodo dolore in irure quis id. Quis ipsum velit mollit velit. Dolor aliqua culpa veniam ullamco veniam dolor fugiat irure laborum. Ea fugiat nulla officia sint esse tempor in duis qui tempor veniam est. Qui incididunt qui in cupidatat. Lorem laboris ipsum voluptate elit cupidatat quis dolore labore sunt minim commodo. Commodo ea in nulla pariatur reprehenderit commodo quis officia in.\r\nNisi ipsum ad exercitation aute sint velit ut esse consequat elit duis velit Lorem magna. Occaecat officia non reprehenderit aute commodo duis mollit laboris adipisicing. Cillum cupidatat mollit et culpa excepteur nulla cillum et ex dolor occaecat cillum adipisicing fugiat. Non duis officia aliquip sint in labore ullamco magna minim laboris minim incididunt duis. Minim sit commodo tempor irure irure. Deserunt deserunt mollit officia mollit dolor dolore anim magna ut ipsum.\r\n"
+    },
+    {
+        "username": "axel",
+        "picture": "http://lorempixel.com/200/200/people",
+        "highlighted": false,
+        "role": [
+            "drift",
+            "sosialen"
+        ],
+        "firstName": "Axel",
+        "lastName": "Henslie",
+        "email": "axel@tihlde.org",
+        "phoneNr": 79843279,
+        "subject": 3,
+        "about": "Mollit excepteur dolor Lorem magna nisi Lorem consectetur Lorem amet fugiat ea dolore. Deserunt mollit adipisicing nostrud culpa minim ullamco esse esse ullamco proident eiusmod pariatur nulla. Amet sint excepteur ex laborum eu aliqua minim. Ut laboris enim proident culpa ea laboris non officia laboris mollit.\r\nSunt mollit aute culpa cillum Lorem tempor nisi exercitation. Consequat Lorem reprehenderit occaecat aliqua excepteur qui sunt excepteur dolore occaecat. Duis ipsum sit eu ipsum exercitation dolore cillum ipsum veniam culpa tempor. Ad eu non elit eu ea tempor consequat sunt veniam veniam anim cupidatat velit.\r\n"
+    }
+]

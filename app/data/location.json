@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "title": "laborum et",
+        "address": {
+            "address": "occaecat anim",
+            "postalCode": 5923
+        },
+        "geolocation": {
+            "long": "",
+            "lat": ""
+        }
+    },
+    {
+        "id": 1,
+        "title": "ex ad",
+        "address": {
+            "address": "non aliquip",
+            "postalCode": 3821
+        },
+        "geolocation": {
+            "long": "",
+            "lat": ""
+        }
+    },
+    {
+        "id": 2,
+        "title": "magna magna",
+        "address": {
+            "address": "ut adipisicing",
+            "postalCode": 6527
+        },
+        "geolocation": {
+            "long": "",
+            "lat": ""
+        }
+    },
+    {
+        "id": 3,
+        "title": "eiusmod officia",
+        "address": {
+            "address": "officia elit",
+            "postalCode": 8977
+        },
+        "geolocation": {
+            "long": "",
+            "lat": ""
+        }
+    },
+    {
+        "id": 4,
+        "title": "cillum commodo",
+        "address": {
+            "address": "quis duis",
+            "postalCode": 1575
+        },
+        "geolocation": {
+            "long": "",
+            "lat": ""
+        }
+    }
+]

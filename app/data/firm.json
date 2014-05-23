@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Software Innovation",
+        "logo": "images/firm/software-innovation.png",
+        "contactPerson": [
+            {
+                "name": "Davenport Wilder",
+                "email": "davenportwilder@zenolux.com",
+                "phone": "+81 25492413"
+            }
+        ],
+        "website": "www.software-innovation.no",
+        "about": "Software Innovation hjelper virksomheter med å håndtere, dele og bruke informasjon slik at den blir til deres mest verdifulle ressurs. Vi utvikler og leverer markedsledende standardløsninger for Enterprise Content Management (ECM) som gjør at virksomheter kan forbedre og effektivisere dokumenthåndtering, saksbehandling og teknisk dokumentkontroll."
+    },
+    {
+        "name": "Havslund",
+        "logo": "images/firm/havslund-logo.png",
+        "contactPerson": [
+                        {
+                "name": "Maryellen Lancaster",
+                "email": "maryellenlancaster@zenolux.com",
+                "phone": "+87 55562344"
+            }
+        ],
+        "website": "www.havslund.no",
+        "about": "Hafslund ASA er et norsk selskap notert på Oslo Børs og er et av de største børsnoterte kraftkonsernene i Norden. Selskapet er en ledende strøm- og fjernvarmeleverandør med hovedtyngden av kunder i Oslo og Akershus. Hafslund eier Norges største strømnett, har produsert fornybar energi fra vannkraft i mer enn 100 år, og satser tungt innen energiutnyttelse av bioenergi og avfall."
+    },
+    {
+        "name": "Bekk",
+        "logo": "images/firm/bekk.png",
+        "contactPerson": [
+          {
+                "name": "Whitfield Good",
+                "email": "whitfieldgood@zenolux.com",
+                "phone": "+81 15953818"
+            }
+        ],
+        "website": "www.bekk.no",
+        "about": "Bekk Consulting AS er et norsk konsulentselskap. Vi gjennomfører prosjekter for store private og offentlige virksomheter innen strategisk rådgivning, utvikling av IT-systemer og design av digitale tjenester. Vi er i dag omkring 350 ansatte, og har kontorer i Oslo og Trondheim."
+    }
+    ]

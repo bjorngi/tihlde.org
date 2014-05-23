@@ -1,0 +1,16 @@
+
+[
+    '{{repeat(5)}}',
+    {
+        id: '{{index()}}',
+        title: '{{lorem(2, "words")}}',
+        address: {
+            address: '{{lorem(2, "words")}}',
+            postalCode: '{{integer(1000,9000)}}'
+        },
+        geolocation: {
+            long: '',
+            lat: ''
+        }
+    }
+]
