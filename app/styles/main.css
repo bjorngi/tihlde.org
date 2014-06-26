@@ -10,9 +10,18 @@ h1 {
   font-size: 2em;
 }
 
+h1 a {
+  color: #454545;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #474747;
+}
+
 header {
   background-color: #1D448C;
-  height: 160px;
+  height: 11.5em;
   border-bottom-style: solid;
   border-bottom-width: 0.3em;
 }
@@ -23,6 +32,7 @@ header img {
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  height: 11em;
 }
 
 header #headerText {
@@ -34,6 +44,19 @@ header #headerText {
   word-wrap: break-word;
   color: #EEEEEE;
 
+}
+
+.tags {
+  margin-left: 0.5em;
+  float: right;
+}
+
+.tags a {
+  color: #EEEEEE;
+}
+
+.tags a:hover {
+  text-decoration: none;
 }
 
 main {
@@ -60,35 +83,6 @@ nav {
   padding-left: 10%;
   padding-right: 10%;
 }
-/*
-nav{
-  background-color: #454545;
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-
-nav ul {
-  padding-left: 10%;
-}
-nav li{
-  display:inline;
-}
-
-nav a{
-    display:inline-block;
-    padding:5px;
-    font-size: 1em;
-    color: #EEEEEE;
-}
-
-nav li a:hover {
-  background-color: #EEEEEE;
-  color: #454545;
-  text-decoration: none;
-}
-
-*/
 
 aside {
   padding-left: 1em;
@@ -102,9 +96,13 @@ aside img {
   vertical-align: center;
 }
 
-#row2 img {
+#row2 input {
   padding-top: 2em;
   width: 70%;
+}
+
+.below {
+  
 
 }
 

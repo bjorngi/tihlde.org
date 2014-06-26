@@ -8,7 +8,7 @@ angular.module('tihldeApp')
       'Karma'
     ];
 
-    $http.get('data/posts.json').success(function(data) {
+    $http.get('http://158.38.48.30:8080/post').success(function(data) {
     	$scope.posts = data;
     });
 

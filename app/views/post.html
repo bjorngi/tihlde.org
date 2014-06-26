@@ -1,4 +1,4 @@
-<body ng-controller="MainCtrl">
+<body ng-controller="PostCtrl">
 <div class="alert alert-danger alert-dismissable">
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
   <strong>Avlyst!</strong> Bedriftpresentasjon med <strong>BEKK</strong> (22.05.2014) er avlyst grunnet kjedelig opplegg.
@@ -29,7 +29,7 @@
 
 <main>
 
-  <article ng-repeat="post in posts">
+  <article>
     <h1 class="underline"><a href="/post/{{post.id}}">{{post.title}}</a></h1>
     <span id="posted">{{post.posted}}</span> <span  ng-repeat="tag in post.tags" class="label label-default tags"><a href="/tag/{{tag}}">{{tag}}</a></span>
     <a href="/post/{{post.id}}"><img src="{{post.banner}}"></a>
