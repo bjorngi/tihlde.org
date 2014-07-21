@@ -1,42 +1,16 @@
-<body ng-controller="PostCtrl">
-<div class="alert alert-danger alert-dismissable">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <strong>Avlyst!</strong> Bedriftpresentasjon med <strong>BEKK</strong> (22.05.2014) er avlyst grunnet kjedelig opplegg.
-</div>
-
-<aside id="row2">
-  <h1 class="underline">Events</h1>
-  <content>
-
-  </content>
-
-  <h4>Annonser</h4>
-
-  <content ng-repeat="firm in firms">
-    <img src="{{firm.logo}}">
-    <span class="below">{{firm.name}}</span>
-
-  </content>
-</aside>
-<aside id="row1">
-  <h1 class="underline">Artikkler</h1>
-  <div ng-repeat="post in posts">
-    <img src="{{post.picture}}">
-    <h3>{{post.title}}</h3>
-  </div>
+<aside id="row">
+  <div ng-include src="'/views/partials/event.html'"></div>
+  <div ng-include src="'/views/partials/advertisements.html'"></div>
 </aside>
 
+<aside id="row">
+  <div ng-include src ="'/views/partials/movie.html'"></div>
+  <div ng-include src ="'/views/partials/article-row.html'"></div>
+</aside>
 
 <main>
+  <h1 class = "underline">{{post.title}}</h1>
+  <img class="img-rounded" src="{{post.banner}}"/>
+  <p>{{post.content}}<p>
 
-  <article>
-    <h1 class="underline"><a href="/post/{{post.id}}">{{post.title}}</a></h1>
-    <span id="posted">{{post.posted}}</span> <span  ng-repeat="tag in post.tags" class="label label-default tags"><a href="/tag/{{tag}}">{{tag}}</a></span>
-    <a href="/post/{{post.id}}"><img src="{{post.banner}}"></a>
-    <p>{{post.content}}</p>
-  </article>
 </main>
-
-</body>
-
-

@@ -5,14 +5,15 @@ angular.module('tihldeApp')
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
+      'Karma',
+      'angularMoment'
     ];
 
     $http.get('http://158.38.48.30:8080/post').success(function(data) {
     	$scope.posts = data;
     });
 
-    $http.get('data/firm.json').success(function(data) {
+    $http.get('http://158.38.48.30:8080/firm').success(function(data) {
     	$scope.firms = data;
     });
   });

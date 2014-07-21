@@ -6,6 +6,7 @@
 
 <head>
   <meta charset="utf-8">
+  <base href="/">
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
@@ -42,9 +43,9 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Hjem</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#">Artikler</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Undergruppene <b class="caret"></b></a>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Undergruppene <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Hovedstyret</a></li>
                   <li class="divider"></li>
@@ -56,7 +57,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tjenester <b class="caret"></b></a>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Tjenester <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Oversikt</a></li>
                   <li class="divider"></li>
@@ -64,9 +65,7 @@
                   <li><a href="#">E-post</a></li>
                   <li><a href="#">OwnClound</a></li>
                   <li><a href="#">Web hosting</a></li>
-                  <li><a href="#">Share Latex</a></li>
-                  <li><a href="#">TV-streaming</a></li>
-                  <li><a href="#">Mailingliste</a></li>
+                  <li><a href="#">Share Latex</a></li> <li><a href="#">TV-streaming</a></li> <li><a href="#">Mailingliste</a></li>
                   <li class="divider"></li>
                   <li><a href="#">Nerdvana</a></li>
                 </ul>
@@ -112,12 +111,16 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/post.js"></script>
+    <script src="scripts/controllers/movie.js"></script>
     <!-- endbuild -->
   </body>
   </html>

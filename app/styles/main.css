@@ -88,11 +88,16 @@ aside {
   padding-left: 1em;
   padding-right: 1em;
   float: right;
+  width: 40%;
+}
+
+
+aside #row {
   width: 20%;
 }
 
 aside img {
-  width: 80%;
+  width: 100%;
   vertical-align: center;
 }
 
@@ -107,6 +112,11 @@ aside img {
 }
 
 #posted {
-  margin-top: -10px;
   color: #CCCCCC;
+}
+
+#articleList {
+    height:25em;
+    overflow:hidden;
+    text-overflow:hidden;
 }
