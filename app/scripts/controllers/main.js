@@ -5,8 +5,7 @@ angular.module('tihldeApp')
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma',
-      'angularMoment'
+      'Karma'
     ];
 
     $http.get('http://158.38.48.30:8080/post').success(function(data) {

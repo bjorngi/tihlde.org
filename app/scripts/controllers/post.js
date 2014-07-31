@@ -11,4 +11,6 @@ angular.module('tihldeApp')
     $http.get('http://158.38.48.30:8080/post/' + $routeParams.postID).success(function(data) {
     	$scope.post = data;
     });
+
+ 
   });

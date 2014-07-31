@@ -116,7 +116,18 @@ aside img {
 }
 
 #articleList {
-    height:25em;
-    overflow:hidden;
-    text-overflow:hidden;
+  height:25em;
+  overflow:hidden;
+  text-overflow:hidden;
+}
+
+.fade {
+ opacity: 1;
+ transition: opacity .25s ease-in-out;
+ -moz-transition: opacity .25s ease-in-out;
+ -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade:hover {
+  opacity: 0.5;
 }

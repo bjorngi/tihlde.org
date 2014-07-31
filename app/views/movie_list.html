@@ -1,0 +1,17 @@
+<aside>
+</aside>
+
+<main data-ng-init="getAllMovies()">
+	<div ng-repeat="movie in movies">
+		<h1 class = "underline">{{movie.title}}</h1>
+		<a href="/#/movie/{{movie.id}}">
+			<img class="img-rounded fade" src="{{movie.banner}}"/>
+		</a>
+		<h3 align="center">{{movie.tagline}}</h3>
+		<p>{{movie.about}}</p>
+
+		<iframe width=100% height=100% ng-show="movie.isTrailer" src="//www.youtube.com/embed/{{movie.trailer}}" frameborder="0" allowfullscreen></iframe>
+
+	</div>
+
+</main>

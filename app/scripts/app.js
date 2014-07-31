@@ -5,7 +5,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'akoenig.deckgrid' 
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -17,9 +18,17 @@ angular
         templateUrl: 'views/post.html',
         controller: 'PostCtrl'
       })
-      .when('/movie', {
+      .when('/movie/:movieID', {
         templateUrl: 'views/movie.html',
         controller: 'MovieCtrl'
+      })
+      .when('/movie', {
+        templateUrl: 'views/movie_list.html',
+        controller: 'MovieCtrl'
+      })
+      .when('/pictures', {
+        templateUrl: 'views/pictures.html',
+        controller: 'PicturesCtrl'
       })
       .otherwise({
         redirectTo: '/'

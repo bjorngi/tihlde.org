@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('tihldeApp')
-  .controller('MovieCtrl', function ($scope, $http) {
+  .controller('MovieCtrl', function ($scope, $http, $routeParams) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -9,23 +9,17 @@ angular.module('tihldeApp')
     ];
 
 
-    $scope.api_key = 'b543b50784787acefc5bff1c35fe9a3e';
-    $scope.imdb_id = 'tt0438488';
+    $scope.api = 'http://158.38.48.30:8080';
 
-    $scope.base_url = 'https://image.tmdb.org/t/p/';
-    $scope.poster_size = 'w342';
-    $scope.banner_size = 'w780';
+    $scope.getMovie = function() {
+      $http.get($scope.api + '/movie/' + $routeParams.movieID).success(function(data) {
+        $scope.movie = data;
+      });
+    }
 
-
-    $http.get('http://api.themoviedb.org/3/movie/' + $scope.imdb_id + '?api_key=' + $scope.api_key).success(function(data) {
-      $scope.movie = data;
-      $scope.movie.poster = $scope.base_url + $scope.poster_size + data.poster_path;
-      $scope.movie.rating = data.vote_average * 10;
-      $scope.movie.banner = $scope.base_url + $scope.banner_size + data.backdrop_path;
-      $scope.movie.date = '24.07.2014 16:44';
-      $scope.movie.isTrailer = true;
-      $scope.movie.trailer = '7ppyPl1m8aA';
-      $scope.movie.location = 'Prinsen Kino, Trondheim';
-    });
-
+    $scope.getAllMovies = function() {
+      $http.get($scope.api + '/movie').success(function(data) {
+        $scope.movies = data;
+      });
+    }
   });

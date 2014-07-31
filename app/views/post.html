@@ -13,4 +13,9 @@
   <img class="img-rounded" src="{{post.banner}}"/>
   <p>{{post.content}}<p>
 
+<div ng-repeat="p in photo.photoset.photo">
+  <img src="https://farm{{p.farm}}.staticflickr.com/{{p.server}}/{{p.id}}_{{p.secret}}.jpg">
+
+</div>
+
 </main>
