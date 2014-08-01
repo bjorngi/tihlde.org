@@ -1,7 +1,7 @@
 <aside>
 </aside>
 
-<main data-ng-init="getAllMovies()">
+<main class="col-md-8" data-ng-init="getAllMovies()">
 	<div ng-repeat="movie in movies">
 		<h1 class = "underline">{{movie.title}}</h1>
 		<a href="/#/movie/{{movie.id}}">

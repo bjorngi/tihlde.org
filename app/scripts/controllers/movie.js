@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('tihldeApp')
-  .controller('MovieCtrl', function ($scope, $http, $routeParams) {
+  .controller('MovieCtrl', function ($scope, $rootScope, $http, $routeParams) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -9,16 +9,15 @@ angular.module('tihldeApp')
     ];
 
 
-    $scope.api = 'http://158.38.48.30:8080';
 
     $scope.getMovie = function() {
-      $http.get($scope.api + '/movie/' + $routeParams.movieID).success(function(data) {
+      $http.get($rootScope.tihlderest + '/movie/' + $routeParams.movieID).success(function(data) {
         $scope.movie = data;
       });
     }
 
     $scope.getAllMovies = function() {
-      $http.get($scope.api + '/movie').success(function(data) {
+      $http.get($rootScope.tihlderest + '/movie').success(function(data) {
         $scope.movies = data;
       });
     }

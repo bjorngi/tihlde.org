@@ -1,21 +1,21 @@
-<aside id="row">
-  <div ng-include src="'/views/partials/event.html'"></div>
-  <div ng-include src="'/views/partials/advertisements.html'"></div>
-</aside>
+    <main class="col-lg-6 col-md-9 col-sm-12">
+        <h1 class = "underline">{{post.title}}</h1>
+        <img class="img-rounded" src="{{post.banner}}"/>
+        <p>{{post.content}}<p>
 
-<aside id="row">
-  <div ng-include src ="'/views/partials/movie.html'"></div>
-  <div ng-include src ="'/views/partials/article-row.html'"></div>
-</aside>
+        <div ng-repeat="p in photo.photoset.photo">
+            <img src="https://farm{{p.farm}}.staticflickr.com/{{p.server}}/{{p.id}}_{{p.secret}}.jpg">
 
-<main>
-  <h1 class = "underline">{{post.title}}</h1>
-  <img class="img-rounded" src="{{post.banner}}"/>
-  <p>{{post.content}}<p>
+        </div>
+    </main>
 
-<div ng-repeat="p in photo.photoset.photo">
-  <img src="https://farm{{p.farm}}.staticflickr.com/{{p.server}}/{{p.id}}_{{p.secret}}.jpg">
+    <aside class="col-lg-3 col-md-3">
+        <div ng-include src="'/views/partials/event.html'"></div>
+        <div ng-include src="'/views/partials/advertisements.html'"></div>
+    </aside>
 
-</div>
+    <aside class="col-lg-3">
+        <div ng-include src ="'/views/partials/movie.html'"></div>
+        <div ng-include src ="'/views/partials/article-row.html'"></div>
+    </aside>
 
-</main>

@@ -61,7 +61,6 @@ header #headerText {
 
 main {
   padding-right: 1em;
-  width: 60%;
 }
 
 .underline {
@@ -92,10 +91,6 @@ aside {
 }
 
 
-aside #row {
-  width: 20%;
-}
-
 aside img {
   width: 100%;
   vertical-align: center;
@@ -104,11 +99,6 @@ aside img {
 #row2 input {
   padding-top: 2em;
   width: 70%;
-}
-
-.below {
-  
-
 }
 
 #posted {
