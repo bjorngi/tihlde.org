@@ -1,29 +1,31 @@
 * {
-  border-color: #000000;
-}
-.container {
-  width: 80%;
-}
-body {
-  background-color: #eeeeee;
   border-color: #454545;
 }
+body {
+  background-color: #EEEEEE;
+  border-color: #454545;
+}
+
 h1 {
   font-size: 2em;
 }
+
 h1 a {
   color: #454545;
 }
+
 h1 a:hover {
   text-decoration: none;
   color: #474747;
 }
+
 header {
-  background-color: #1d448c;
+  background-color: #1D448C;
   height: 11.5em;
   border-bottom-style: solid;
   border-bottom-width: 0.3em;
 }
+
 header img {
   float: left;
   padding-left: 10%;
@@ -32,6 +34,7 @@ header img {
   padding-bottom: 1em;
   height: 11em;
 }
+
 header #headerText {
   font-style: bold;
   text-shadow: 2px 2px 2px #454545;
@@ -39,21 +42,33 @@ header #headerText {
   font-size: 1.8em;
   width: 800px;
   word-wrap: break-word;
-  color: #eeeeee;
+  color: #EEEEEE;
+
 }
+
 .tags {
   margin-left: 0.5em;
   float: right;
 }
+
 .tags a {
-  color: #eeeeee;
+  color: #EEEEEE;
 }
+
 .tags a:hover {
   text-decoration: none;
 }
+
 main {
   padding-right: 1em;
 }
+
+.underline {
+  border-width: 1px;
+  border-bottom-style: solid;
+
+}
+
 main img {
   width: 100%;
   vertical-align: center;
@@ -62,37 +77,47 @@ main img {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.underline {
-  border-width: 1px;
-  border-bottom-style: solid;
-}
+
 nav {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 aside {
   padding-left: 1em;
   padding-right: 1em;
   float: right;
   width: 40%;
 }
+
+
 aside img {
   width: 100%;
   vertical-align: center;
 }
+
 #row2 input {
   padding-top: 2em;
   width: 70%;
 }
+
 #posted {
-  color: #cccccc;
+  color: #CCCCCC;
 }
+
+#articleList {
+  height:25em;
+  overflow:hidden;
+  text-overflow:hidden;
+}
+
 .fade {
-  opacity: 1;
-  transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
+ opacity: 1;
+ transition: opacity .25s ease-in-out;
+ -moz-transition: opacity .25s ease-in-out;
+ -webkit-transition: opacity .25s ease-in-out;
 }
+
 .fade:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
