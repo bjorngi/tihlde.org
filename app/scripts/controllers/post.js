@@ -9,8 +9,8 @@ angular.module('tihldeApp')
     ];
 
     $http.get($rootScope.tihlderest + '/post/' + $routeParams.postID).success(function(data) {
-    	$scope.post = data;
+      $scope.post = data;
     });
 
- 
+
   });

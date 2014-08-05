@@ -6,8 +6,14 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'akoenig.deckgrid' 
+    'akoenig.deckgrid',
+    'angular-momentjs'
   ])
+  .config(function($momentProvider){
+    $momentProvider
+      .asyncLoading(false)
+      .scriptUrl('//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js');
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -33,6 +39,5 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-
   });
 

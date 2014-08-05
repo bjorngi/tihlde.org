@@ -14,11 +14,11 @@ angular.module('tihldeApp')
       $http.get($rootScope.tihlderest + '/movie/' + $routeParams.movieID).success(function(data) {
         $scope.movie = data;
       });
-    }
+    };
 
     $scope.getAllMovies = function() {
       $http.get($rootScope.tihlderest + '/movie').success(function(data) {
         $scope.movies = data;
       });
-    }
+    };
   });
