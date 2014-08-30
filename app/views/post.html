@@ -1,12 +1,24 @@
 <div class="row">
     <main class="col-lg-6 col-md-9 col-sm-12">
-        <h1 class = "underline">{{post.title}}</h1>
+        <h1 ng-hide="isEdit" class = "underline">{{post.title}}</h1>
+        <input ng-show="isEdit" class="form-control" ng-model="newPost.title">
         <img class="img-rounded" src="{{post.banner}}"/>
-        <p>{{post.content}}<p>
+
+        <i ng-hide="isEdit" class="text-right fa fa-pencil fa-fw fade" ng-click="edit()"></i>
+        <div ng-hide="isEdit" ng-bind-html="post.content"></div>
+        <div ng-show="isEdit"
+             text-angular
+             ta-toolbar="[['h2','h3'],['bold','italics'],['p','pre','quote'],['insertImage','insertLink']]"
+             ng-model="newPost.content"></div>
+
 
         <div ng-repeat="p in photo.photoset.photo">
             <img src="https://farm{{p.farm}}.staticflickr.com/{{p.server}}/{{p.id}}_{{p.secret}}.jpg">
-
+        </div>
+        <div ng-show="isEdit" class="btn-group dropup">
+            <button type="button" class="btn btn-default" ng-click="submit()">Lagre</button>
+            <button type="button" class="btn btn-default" ng-click="preview()">Forhåndsvis</button>
+            <button type="button" class="btn btn-danger" ng-click="abort()">Avbryt</button>
         </div>
     </main>
 

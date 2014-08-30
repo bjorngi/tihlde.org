@@ -8,7 +8,8 @@ angular.module('tihldeApp')
       'Karma'
     ];
 
-    $rootScope.tihlderest = 'http://127.0.0.1:8080';
+    $rootScope.tihlderest = 'http://158.38.48.29:8080';
+    $scope.reverse = true;
 
     var getPartial = function(url) {
       $http.get($rootScope.tihlderest + url).success(function(data) {

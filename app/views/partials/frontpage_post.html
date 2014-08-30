@@ -1,5 +1,8 @@
  <h1 class="underline"><a href="/#/post/{{post.id}}">{{post.title}}</a></h1>
- <span id="posted">{{post.posted}}</span> <span  ng-repeat="tag in post.tags" class="label label-default tags"><a href="/tag/{{tag}}">{{tag}}</a></span>
+ <div id="posted">Postet <span id="posted" am-time-ago="post.posted" >
+
+ </span></div> <span  ng-repeat="tag in post.tags" class="label label-default tags"><a href="/tag/{{tag}}">{{tag}}</a></span>
  <a href="/#/post/{{post.id}}"><img class="img-rounded" src="{{post.banner}}"></a>
 
- <p>{{post.content}}</p>
+ <div ng-bind-html="post.content"></div>
+

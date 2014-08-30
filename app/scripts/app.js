@@ -7,12 +7,13 @@ angular
     'ngSanitize',
     'ngRoute',
     'akoenig.deckgrid',
-    'angular-momentjs'
+    'angularMoment',
+    'textAngular',
+    'ngDialog'
   ])
-  .config(function($momentProvider){
-    $momentProvider
-      .asyncLoading(false)
-      .scriptUrl('//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js');
+  .constant('angularMomentConfig', {
+    preprocess: 'unix', // optional
+    timezone: 'Europe/Oslo' // optional
   })
   .config(function ($routeProvider) {
     $routeProvider
